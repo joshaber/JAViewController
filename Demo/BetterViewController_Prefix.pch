@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'BetterViewController' target in the 'BetterViewController' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#define LOG() NSLog(@"<%p> %@ // %d", self, NSStringFromSelector(_cmd), __LINE__);
