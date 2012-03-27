@@ -10,24 +10,6 @@
 #import "JAViewController.h"
 #import <objc/runtime.h>
 
-@interface NSView ()
-+ (void)loadSupportForLayoutSubviews;
-+ (void)loadSupportForViewControllers;
-
-- (void)custom_viewWillMoveToSuperview:(NSView *)newSuperview;
-- (void)custom_viewDidMoveToSuperview;
-
-- (void)custom_viewWillMoveToWindow:(NSWindow *)newWindow;
-- (void)custom_viewDidMoveToWindow;
-
-- (void)custom_setNextResponder:(NSResponder *)newNextResponder;
-
-- (void)custom_setBounds:(NSRect)newBounds;
-- (void)custom_setFrame:(NSRect)newFrame;
-- (void)custom_viewWillDraw;
-- (BOOL)needsLayout;
-@end
-
 static NSString * const JAViewExtensionsViewControllerKey = @"JAViewExtensionsViewControllerKey";
 static NSString * const JAViewExtensionsNeedsLayoutKey = @"JAViewExtensionsNeedsLayoutKey";
 
